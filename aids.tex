@@ -1,3 +1,4 @@
+%LATEX Header
 %\documentclass[letterpaper,12pt]{article}
 \documentclass[12pt]{article}
 \usepackage[letterpaper]{geometry}
@@ -5,25 +6,7 @@
 \usepackage{times}
 \usepackage{enumerate}
 
-%WEB STUFF
-%
-%Rotating tables (e.g. sideways when too long)
-%
-\usepackage{rotating}
-
-%
-%For multiple rows in tables
-%
-\usepackage{multirow}
-
-% 
-%Line numbering in verse environment
-%
-\usepackage{lineno} 
-
-%
 %Fancy-header package to modify header/page numbering (insert last name)
-%
 \usepackage{fancyhdr}
 \lhead{} 
 \chead{} 
@@ -37,15 +20,7 @@
 %12pt is one-sixth of an inch. Subtract this from 0.5in to get headsep value
 \setlength\headsep{0.333in}
 
-%
-%Works cited environment
-%(to start, use \begin{workscited...}, each entry preceded by \bibent)
-% - from Ryan Alcock's MLA style file
-%
-\newcommand{\bibent}{\noindent \hangindent 40pt}
-\newenvironment{workscited}{\newpage \begin{center} Works Cited \end{center}}{\newpage }
-
-%END WEB STUFF
+\setlength{\headheight}{15pt}
 
 % Title Page
 \title{HIV/AIDS in South Africa \\ H312 Term Paper}
@@ -110,20 +85,14 @@ Both Mbeki and his health minister, Manto Tshabalala-Msimang questioned the effe
 In conclusion, stuff.
 
 \section{Works Cited}
-http://www.avert.org/aidssouthafrica.htm\\
-http://en.wikipedia.org/wiki/AIDS\_in\_South\_Africa\\
-http://en.wikipedia.org/wiki/South\_africa\\
-http://www.hsrc.ac.za/Document-3238.phtml\\
-http://www.doh.gov.za/docs/reports/2008/progress/part2.pdf\\
-https://www.cia.gov/library/publications/the-world-factbook/rankorder/2155rank.html\\
-
 \begin{enumerate}
 
-\item lastname, firstname \textit{Title}. City: Publisher, Year, Date
-\item lastname, firstname \textit{Title}. City: Publisher, Year, Date
-\item lastname, firstname \textit{Title}. City: Publisher, Year, Date
-\item lastname, firstname \textit{Title}. City: Publisher, Year, Date
+\item ``HIV \& AIDS in South Africa.'' AIDS \& HIV Information from the AIDS Charity AVERT. Web. 28 Feb. 2011. <http://www.avert.org/aidssouthafrica.htm>.
+\item Shisana, Olive, and Thomas Rehle. "South African National HIV Prevalence, Incidence, Behaviour and Communication Survey, 2008." Http://www.hsrc.ac.za/Document-3238.phtml. HSRC Press, 2009. Web. 28 Feb. 2011.
+\item http://en.wikipedia.org/wiki/AIDS\_in\_South\_Africa
+\item http://en.wikipedia.org/wiki/South\_africa
+\item http://www.doh.gov.za/docs/reports/2008/progress/part2.pdf
+\item https://www.cia.gov/library/publications/the-world-factbook/rankorder/2155rank.html
 
 \end{enumerate}
-
 \end{document}
