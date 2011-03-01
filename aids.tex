@@ -1,14 +1,61 @@
-\documentclass[letterpaper,12pt]{article}
+%\documentclass[letterpaper,12pt]{article}
+\documentclass[12pt]{article}
+\usepackage[letterpaper]{geometry}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
 \usepackage{times}
-\usepackage{fullpage}
+\usepackage{enumerate}
+
+%WEB STUFF
+%
+%Rotating tables (e.g. sideways when too long)
+%
+\usepackage{rotating}
+
+%
+%For multiple rows in tables
+%
+\usepackage{multirow}
+
+% 
+%Line numbering in verse environment
+%
+\usepackage{lineno} 
+
+%
+%Fancy-header package to modify header/page numbering (insert last name)
+%
+\usepackage{fancyhdr}
+\lhead{} 
+\chead{} 
+\rhead{Rasmussen \thepage} 
+\lfoot{} 
+\cfoot{} 
+\rfoot{} 
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0pt} 
+%To make sure we actually have header 0.5in away from top edge
+%12pt is one-sixth of an inch. Subtract this from 0.5in to get headsep value
+\setlength\headsep{0.333in}
+
+%
+%Works cited environment
+%(to start, use \begin{workscited...}, each entry preceded by \bibent)
+% - from Ryan Alcock's MLA style file
+%
+\newcommand{\bibent}{\noindent \hangindent 40pt}
+\newenvironment{workscited}{\newpage \begin{center} Works Cited \end{center}}{\newpage }
+
+%END WEB STUFF
 
 % Title Page
 \title{HIV/AIDS in South Africa \\ H312 Term Paper}
 \author{Torben Rasmussen}
 \date{2/28/2011}
+
 \begin{document}
-\thispagestyle{empty}
 \maketitle
+\thispagestyle{empty}
+\pagestyle{fancy}
 \newpage
 
 \section{Introduction}
@@ -44,7 +91,9 @@ In 2009, there were approximately 330,000 people under 15 living with AIDS, whic
 There are two main infection routes for HIV: heterosexual sex, and mother-to-child transmission. 
 
 \subsection{Aids Awareness}
-South Africa currently has a number of large-scale communication-based campaigns.
+South Africa currently has a number of large-scale communication-based campaigns that focus on awareness of HIV/AIDS, as well as more general health issues.
+The HIV Counseling and Testing campaign began in April 2010, and was aimed at improving AIDS awareness.
+
 \subsection{Children and Families}
 \subsection{Condom Use}
 \subsection{Gender Violence and Inequality}
@@ -61,11 +110,20 @@ Both Mbeki and his health minister, Manto Tshabalala-Msimang questioned the effe
 In conclusion, stuff.
 
 \section{Works Cited}
-1. http://www.avert.org/aidssouthafrica.htm\\
-2. http://en.wikipedia.org/wiki/AIDS\_in\_South\_Africa\\
-3. http://en.wikipedia.org/wiki/South\_africa\\
-4. http://www.hsrc.ac.za/Document-3238.phtml\\
-5. http://www.doh.gov.za/docs/reports/2008/progress/part2.pdf\\
-6. https://www.cia.gov/library/publications/the-world-factbook/rankorder/2155rank.html\\
+http://www.avert.org/aidssouthafrica.htm\\
+http://en.wikipedia.org/wiki/AIDS\_in\_South\_Africa\\
+http://en.wikipedia.org/wiki/South\_africa\\
+http://www.hsrc.ac.za/Document-3238.phtml\\
+http://www.doh.gov.za/docs/reports/2008/progress/part2.pdf\\
+https://www.cia.gov/library/publications/the-world-factbook/rankorder/2155rank.html\\
+
+\begin{enumerate}
+
+\item lastname, firstname \textit{Title}. City: Publisher, Year, Date
+\item lastname, firstname \textit{Title}. City: Publisher, Year, Date
+\item lastname, firstname \textit{Title}. City: Publisher, Year, Date
+\item lastname, firstname \textit{Title}. City: Publisher, Year, Date
+
+\end{enumerate}
 
 \end{document}
